@@ -7,7 +7,7 @@ analyze -format verilog {/home/abdelazeem/Desktop/synopsys/pfd_loopF.v}
 
 #elaborate (pfd_loopF is the name of the top level module)
 elaborate pfd_loopF -architecture verilog -library DEFAULT -update
-write -hierarchy -format ddc -output /home/eslam/Desktop/synopsys/pfd_loopF.ddc
+write -hierarchy -format ddc -output /home/abdelazeem/Desktop/synopsys/pfd_loopF.ddc
 
 #timing & area constraints (refSignal is the clock name in my verilog file-edit according to your design (ns))
 create_clock -name "clk" -period 10 -waveform { 0 5  }  { refSignal  }
